@@ -3,12 +3,12 @@ package com.shop.utils;
 import java.util.UUID;
 
 /**
- * ç”Ÿæˆéšæœºå­—ç¬¦ä¸²çš„å·¥å…·ç±»
+ * Éú³ÉËæ»ú×Ö·û´®µÄ¹¤¾ßÀà
  */
 
 public class UUIDUtils {
     /**
-     * è·å¾—éšæœºçš„å­—ç¬¦ä¸²
+     * »ñµÃËæ»úµÄ×Ö·û´®
      *
      * @return
      */
