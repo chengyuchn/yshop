@@ -4,6 +4,8 @@ import com.shop.entity.*;
 import com.shop.service.OrderService;
 import com.shop.service.ProductService;
 import com.shop.service.WalletService;
+import com.shop.utils.PaymentUtil;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -158,8 +160,8 @@ public class OrderController {
         //修改订单
         //float money=new Wallet().getMoney();
         //System.out.println("money"+money);
-//		// 2.完成付款:
-//		// 付款需要的参数:
+		// 2.完成付款:
+		// 付款需要的参数:
 //		String p0_Cmd = "Buy"; // 业务类型:
 //		String p1_MerId = "10001126856";// 商户编号:
 //		String p2_Order = order.getOid().toString();// 订单编号:
@@ -173,6 +175,7 @@ public class OrderController {
 //		String pa_MP = ""; // 商户扩展信息:
 //		String pr_NeedResponse = "1"; // 应答机制:
 //		String keyValue = "69cl522AV6q613Ii4W6u8K6XuW8vM1N6bFgyv769220IuYe9u37N4y7rI4Pl"; // 秘钥
+//		String pd_FrpId = null;
 //		String hmac = PaymentUtil.buildHmac(p0_Cmd, p1_MerId, p2_Order, p3_Amt, p4_Cur, p5_Pid, p6_Pcat, p7_Pdesc,
 //				p8_Url, p9_SAF, pa_MP, pd_FrpId, pr_NeedResponse, keyValue); // hmac码
 //		// 向易宝发送请求:

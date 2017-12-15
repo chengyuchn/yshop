@@ -1,6 +1,9 @@
 package com.shop.entity;
 
 import javax.persistence.*;
+
+import org.hibernate.annotations.GenericGenerator;
+
 import java.util.Date;
 
 /**
@@ -10,7 +13,8 @@ import java.util.Date;
 @Entity
 public class Product {
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator="my_gen")
+    @GenericGenerator(name="my_gen", strategy="identity")
     @Id
     private Integer pid;
     private String pname;

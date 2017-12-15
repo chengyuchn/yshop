@@ -76,7 +76,7 @@ else
 };
 // -->
   function exit(){
-       window.open('${pageContext.request.contextPath}/jsp/admin/index.jsp','_top')
+       window.open('${pageContext.request.contextPath}/admin/index.jsp','_top')
          } 
 									</script> </font>
 							</td>
